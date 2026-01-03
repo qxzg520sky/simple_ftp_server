@@ -1,11 +1,14 @@
 # 简单FTP服务器
+<img width="993" height="660" alt="image" src="https://github.com/user-attachments/assets/1ffc2f96-ec72-4b62-91f3-aa3712ff216f" />
+<img width="961" height="770" alt="image" src="https://github.com/user-attachments/assets/d66e5d86-fdb0-4c6d-9847-56d7924314ca" />
 
-🚀 Simple FTP/FTPS Server
+
+🚀 简单的FTP/FTPS服务器
 一个轻量级、全交互式、支持加密传输的 FTP 服务器，适用于 Windows 环境。无需复杂配置，首次运行即引导你完成所有设置，并自动保存用户信息。内置 Web 管理面板和日志轮转功能。
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python)
-![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey)
-![License](https://img.shields.io/badge/License-MIT-green)
+![平台](https://img.shields.io/badge/平台-Windows-浅灰色)
+![许可证](https://img.shields.io/badge/License-MIT-green)
 
 ✨ 特性
 ✅ 全交互式配置向导：首次运行自动引导设置端口、用户、目录、FTPS 等
@@ -21,13 +24,13 @@
 方法一：直接运行（需 Python）
 
 1. 安装依赖：
-bash
-pip install pyftpdlib flask cryptography
+巴什
+使用pip安装pyftpdlib、flask和cryptography。
 
 2. 下载 simple_ftp_server.py 到任意目录（如桌面）
 
 3. 双击运行或在终端执行：
-bash
+巴什
 python simple_ftp_server.py
 
 4. 按提示完成配置（示例）：
@@ -35,7 +38,7 @@ python simple_ftp_server.py
 🔧 欢迎使用高级 FTP 服务器配置向导！
 
 请输入 FTP 控制端口 [默认: 2121]: 2121
-是否启用匿名访问？(y/N) [匿名用户只能只读]: n
+是否启用匿名访问？(y/N) [匿名用户只能只读]: 否
 请输入用户（格式：用户名:密码，留空结束）: admin:secure123
 请输入用户（格式：用户名:密码，留空结束）:
 请输入 FTP 根目录 [默认: C:\wwwftp]:
