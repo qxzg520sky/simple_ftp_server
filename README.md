@@ -3,20 +3,14 @@
 <img width="961" height="770" alt="图片" src="https://github.com/user-attachments/assets/d66e5d86-fdb0-4c6d-9847-56d7924314ca" />
 
 
-🚀 简单的FTP/FTPS服务器
+当然可以！以下是一个专业、清晰、用户友好的 README.md 文件，专为你的 simple_ftp_server.py 项目编写，涵盖功能介绍、使用方法、打包说明、常见问题等。
+
+🚀 Simple FTP/FTPS Server
 一个轻量级、全交互式、支持加密传输的 FTP 服务器，适用于 Windows 环境。无需复杂配置，首次运行即引导你完成所有设置，并自动保存用户信息。内置 Web 管理面板和日志轮转功能。
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python)
-你提供的内容看起来是类似Markdown语法中用于显示徽章（badge）的代码片段，以下是逐部分翻译并按合理表述输出：
-```
-![平台](https://img.shields.io/badge/平台-Windows-浅灰色)
-```
-翻译后表述为：
-```
-![平台](https://img.shields.io/badge/Platform-Windows-Light Gray)
-```
-如果是要将其以自然语言形式表达，意思是：一个指向链接 `https://img.shields.io/badge/平台-Windows-浅灰色` 的图片，图片显示的内容为“平台：Windows” ，颜色为浅灰色 。 
-![许可证](https://img.shields.io/badge/License-MIT-green)
+![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey)
+![License](https://img.shields.io/badge/License-MIT-green)
 
 ✨ 特性
 ✅ 全交互式配置向导：首次运行自动引导设置端口、用户、目录、FTPS 等
@@ -32,13 +26,13 @@
 方法一：直接运行（需 Python）
 
 1. 安装依赖：
-
-使用pip安装pyftpdlib、flask和cryptography。
+bash
+pip install pyftpdlib flask cryptography
 
 2. 下载 simple_ftp_server.py 到任意目录（如桌面）
 
 3. 双击运行或在终端执行：
-
+bash
 python simple_ftp_server.py
 
 4. 按提示完成配置（示例）：
@@ -46,7 +40,7 @@ python simple_ftp_server.py
 🔧 欢迎使用高级 FTP 服务器配置向导！
 
 请输入 FTP 控制端口 [默认: 2121]: 2121
-是否启用匿名访问？(y/N) [匿名用户只能只读]: 否
+是否启用匿名访问？(y/N) [匿名用户只能只读]: n
 请输入用户（格式：用户名:密码，留空结束）: admin:secure123
 请输入用户（格式：用户名:密码，留空结束）:
 请输入 FTP 根目录 [默认: C:\wwwftp]:
@@ -71,6 +65,7 @@ ftp.log：运行日志
 
 虽然本程序主打交互，但也支持部分命令行选项：
 
+bash
 python simple_ftp_server.py -h
 
 输出：
@@ -97,11 +92,11 @@ FTPS 是必须的：强烈建议启用 --ftps，避免密码在网络中明文�
 步骤：
 
 1. 安装 PyInstaller：
-
+bash
 pip install pyinstaller
 
 2. 在脚本目录执行：
-
+bash
 pyinstaller --onefile --console --name "SimpleFTPServer" simple_ftp_server.py
 
 3. 打包完成后，可执行文件位于：
@@ -144,7 +139,7 @@ Q4: 日志文件太大？
 本项目采用 [MIT License](LICENSE) — 免费用于个人或商业用途。
 
 👨‍💻 作者
-编写 & 维护：LI QI 
+编写 & 维护：LIQI
 邮箱：tian_ko@163.com
 💬 欢迎提交 Issue 或 PR！
 
